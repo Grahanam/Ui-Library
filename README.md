@@ -2,34 +2,40 @@
 
 ## Getting Started
 
-- clone this Repository
+- Clone this Repository
 
 - Install Node packages
 ```bash
 npm install
 ```
 
+
 - Go to Packages folder
 ```bash
 cd packages
 ```
+
 
 - Install library node packages
 ```bash
 npm install
 ```
 
+
 ### How to install ui-library in your project
+
 
 - In your project directory
 ```bash
 npm install path-to-ui-library-folder/packages/ui-library
 ```
 
--Import Functions from 'ui-library' packages
+
+- Import Functions from 'ui-library' packages
 ```bash
 import {createTemplate,Button,H1,Div,render,updateState} from 'ui-library'
 ```
+
 
 ### Usage -Creating Simple Web page with Counter
 
@@ -39,7 +45,7 @@ import {createTemplate,Button,H1,Div,render,updateState} from 'ui-library'
   
   let count=0
   
-  //Page with H1 tag and button(with onclick updatestate function)
+  // Template with H1 tag and Button(onclick- updatestate)
   const App = createTemplate((state, props) => {
     
     let button = Button({onClick: () => {
@@ -54,7 +60,7 @@ import {createTemplate,Button,H1,Div,render,updateState} from 'ui-library'
     return div;
   });
 
-  //Render App
+  // Render App
   render(App({count:count},{}))
 
 ```
